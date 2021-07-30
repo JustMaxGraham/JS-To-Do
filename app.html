@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="container">
+    <div class="app">
+        <script src="functions.js"></script>
+        <h2>TO DO List</h2>
+        <form>
+            <input type="text" placeholder="Add a new task...">
+            <button type="submit" onclick="addTask(); return false">&plus;</button>
+        </form>
+        <ul>
+            <li>
+                <input type="checkbox" onclick="taskComplete(this)">
+                <span>Exercise</span>
+                <i class="fa fa-trash" onclick="removeTask(this)"></i>
+            </li>
+        </ul>
+    </div>
+</div>
